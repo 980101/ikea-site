@@ -5,12 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IKEA</title>
         <script src="https://kit.fontawesome.com/2905322478.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Header -->
-        <header class="main-header">
+        <header>
             <nav class="navbar">
-                <a href="#" class="logo"><img src="https://www.ikea.com/kr/ko/static/ikea-logo.f88b07ceb5a8c356b7a0fdcc9a563d63.svg" alt="IKEA" title="IKEA"></a>
+                <img src="https://www.ikea.com/kr/ko/static/ikea-logo.f88b07ceb5a8c356b7a0fdcc9a563d63.svg" alt="IKEA" title="IKEA">
                 <ul class="icons">
                     <li class="item"><i class="far fa-user"></i></li>
                     <li class="item"><i class="far fa-heart"></i></li>
@@ -20,18 +23,21 @@
             </nav>
             <div class="search">
                 <label for="search-form"><i class="fas fa-search"></i></label>
-                <input type="search" id="search-form">
-                <button class="picture"><i class="fas fa-camera"></i></button>
+                <input type="search" id="search-form" placeholder="검색어 입력">
+                <i class="fas fa-camera"></i>
             </div>
         </header>
 
         <!-- content-notice-->
         <section class="notice">
-            <img src="https://www.ikea.com/images/6a/c2/6ac2eebf956c58a95684559a7b49d74b.jpg?f=s" alt="">
+            <img src="https://www.ikea.com/images/47/95/479531e5b5e81fe77429ae623e4df77b.jpg?f=xxxl" alt="">
             <div class="content">
-                <span class="title">모바일 쇼핑을 더 편리하게, IKEA 앱 출시!</span>
-                <span class="info">원하는 제품을 앱에서 바로 결제할 수 있고, 내 취향에 맞춘 인테리어 사진과 홈퍼니싱 팁을 추천받을 수 있어요.  IKEA Family 멤버라면 처음 한번만 로그인하면 다양한 IKEA Family 혜택도 누릴 수 있고, 계산대 앞에서 쉽게 카드를 확인할 수도 있어요! </span>
-                <button class="moreBtn">자세히 보기-</button>
+                <p class="title">모두의 새로운 시작</p>
+                <div class="info">
+                    <p>갑자기 집으로 찾아온 학교, 그리고 일터. 당신의 집은 충분히 준비 되었나요?</p>
+                    <p>새로운 시작을 위한 홈스쿨, 홈오피스, 침대를 최대 20% 할인된 가격으로 만나보세요!</p>
+                </div>
+                <div class="moreBtn"><span>자세히 보기</span></div>
             </div>
         </section>
 
@@ -42,26 +48,25 @@
                 <li class="item">
                     <img src="https://www.ikea.com/images/-cfed60e186b1778b273fd87066b79bcc.jpg?f=s" alt="">
                     <div class="info">
-                        <a href="#" class="title">IKEA 기프트 카드로 준비하는 선물같은 새해</a>
+                        <h2>IKEA 기프트 카드로 준비하는 선물같은 새해</h2>
                         <button class="moreBtn"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </li>
                 <li class="item">
                     <img src="https://www.ikea.com/images/-332f18337ddd4afb16ccf216ea033775.jpg?f=s" alt="">
                     <div class="info">
-                        <a href="#" class="title">언택트로 만나는 IKEA: 비대면 서비스로 제품주문부터 플래닝까지</a>
+                        <h2>언택트로 만나는 IKEA: 비대면 서비스로 제품주문부터 플래닝까지</h2>
                         <button class="moreBtn"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </li>
                 <li class="item">
                     <img src="https://www.ikea.com/images/71/e5/71e54164506d0cb52c8dfc9f3308bca4.jpg?f=s" alt="">
                     <div class="info">
-                        <a href="#" class="title">보여주세요! IKEA로 꾸민 당신의 집</a>
+                        <h2>보여주세요! IKEA로 꾸민 당신의 집</h2>
                         <button class="moreBtn"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </li>
             </ul>
-            <input type="range" class="slider">
         </section>
 
         <!-- content-goods-recommend -->
@@ -69,9 +74,9 @@
             <span class="title">추천 제품</span>
             <ul class="content">
                 <li class="item">
-                    <button class="like"><i class="far fa-heart"></i></button>
+                    <i class="far fa-heart"></i>
                     <img src="https://www.ikea.com/kr/ko/images/products/anilinare-jewellery-box-with-compartments-dark-brown__0921618_PE788079_S5.JPG?f=xl" alt="">
-                    <div class="matadata">
+                    <div class="metadata">
                         <span class="name">ANILINARE 아닐리나레</span>
                         <span class="detail">칸막이 보석함, 30X18X6 cm</span>
                         <span class="price">\9,900</span>
@@ -85,9 +90,9 @@
                     </div>
                 </li>
                 <li class="item">
-                    <button class="like"><i class="far fa-heart"></i></button>
+                    <i class="far fa-heart"></i>
                     <img src="https://www.ikea.com/kr/ko/images/products/vanligen-vase-grey__0797962_PE767276_S5.JPG?f=xl" alt="">
-                    <div class="matadata">
+                    <div class="metadata">
                         <span class="name">VANLIGEN 반리겐</span>
                         <span class="detail">꽃병, 그레이, 18cm</span>
                         <span class="price">\12,900</span>
@@ -101,9 +106,9 @@
                     </div>
                 </li>
                 <li class="item">
-                    <button class="like"><i class="far fa-heart"></i></button>
+                    <i class="far fa-heart"></i>
                     <img src="https://www.ikea.com/kr/ko/images/products/backig-mug-black__0916125_PE784988_S5.JPG?f=xl" alt="">
-                    <div class="matadata">
+                    <div class="metadata">
                         <span class="name">BACKIG 바키그</span>
                         <span class="detail">머그컵, 37 cl</span>
                         <span class="price">\1,900</span>
@@ -117,9 +122,9 @@
                     </div>
                 </li>
                 <li class="item">
-                    <button class="like"><i class="far fa-heart"></i></button>
+                    <i class="far fa-heart"></i>
                     <img src="https://www.ikea.com/kr/ko/images/products/milsbo-glass-door-cabinet-white__0647476_PE704494_S5.JPG?f=xl" alt="">
-                    <div class="matadata">
+                    <div class="metadata">
                         <span class="name">MILSBO 밀스보</span>
                         <span class="detail">유리도어수납장, 73X175cm</span>
                         <span class="price">\299,000</span>
@@ -133,9 +138,9 @@
                     </div>
                 </li>
                 <li class="item">
-                    <button class="like"><i class="far fa-heart"></i></button>
+                    <i class="far fa-heart"></i>
                     <img src="https://www.ikea.com/kr/ko/images/products/elvarli-3-sections-white__0440421_PE592461_S5.JPG?f=xl" alt="">
-                    <div class="matadata">
+                    <div class="metadata">
                         <span class="name">ELVARLI 엘발리</span>
                         <span class="detail">섹션3, 165X55X216 cm</span>
                         <span class="price">\850,000</span>
@@ -149,7 +154,6 @@
                     </div>
                 </li>
             </ul>
-            <input type="range" class="slider">
         </section>
 
         <!-- content-goods-new -->
@@ -159,23 +163,23 @@
                 <li class="item"><img src="https://www.ikea.com/ext/ingkadam/m/3dc6936cf63fd81b/original/PH175618.jpg?f=l" alt=""></li>
                 <li class="item"><img src="https://www.ikea.com/ext/ingkadam/m/57980a1ca6a2f2fa/original/PH175679.jpg?f=l" alt=""></li>
             </ul>
-            <button class="detail">
-                <a href="#" class="title">신제품 보러가기</a>
-                <a href="#" class="mark"><i class="fas fa-angle-right"></i></a>
-            </button>
+            <div class="detail">
+                <span class="title">신제품 보러가기</span>
+                <i class="fas fa-angle-right"></i>
+            </div>
         </section>
 
         <!-- content-goods-prefer-->
         <section class="prefer-goods">
-            <span class="title"></span>
+            <span class="title">모든 것을 위한 집</span>
             <ul class="content">
                 <li class="item"><img src="https://www.ikea.com/ext/ingkadam/m/6fb31702df40403f/original/PH175729.jpg?f=m" alt=""></li>
                 <li class="item"><img src="https://www.ikea.com/ext/ingkadam/m/1696d5d4c82f169b/original/PH158712-crop001.jpg?f=m" alt=""></li>
             </ul>
-            <button class="detail">
-                <a href="#" class="title">수납함/바구니 더 보러가기</a>
-                <a href="#" class="mark"><i class="fas fa-angle-right"></i></a>
-            </button>
+            <div class="detail">
+                <span class="title">수납함/바구니 더 보러가기</span>
+                <i class="fas fa-angle-right"></i>
+            </div>
         </section>
 
         <!-- content-goods-eco -->
@@ -183,42 +187,42 @@
             <span class="title">지속가능한 내일을 위한 솔루션</span>
             <ul class="content">
                 <li class="item main">
-                    <span class="title">집에서 지속가능한 생활을 실천할 수 있는 아이디어</span>
-                    <a href="#" class="detail"><i class="fas fa-arrow-right"></i></a>
+                    <div class="title">
+                        <span class="info">집에서 지속가능한 생활을 실천할 수 있는 아이디어</span>
+                        <button class="moreBtn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
                 </li>
                 <li class="item">
                     <img src="https://www.ikea.com/images/f8/58/f858ed7c6797c35c437b2ee9ea8144be.jpg?f=xxs" alt="">
-                    <a href="#" class="detail">물과 에너지 아끼기</a>
+                    <div class="detail"><span>물과 에너지 아끼기</span></div>
                 </li>
                 <li class="item">
                     <img src="https://www.ikea.com/images/9c/14/9c1469cd6cdd7d646df5ddd84d1217ed.jpg?f=xxs" alt="">
-                    <a href="#" class="detail">지속가능한 소재</a>
+                    <div class="detail"><span>지속가능한 소재</span></div>
                 </li>
                 <li class="item">
                     <img src="https://www.ikea.com/images/1d/21/1d212111111d0f0bb859e8aa4a946936.jpg?f=xxs" alt="">
-                    <a href="#" class="detail">건강한 집</a>
+                    <div class="detail"><span>건강한 집</span></div>
                 </li>
                 <li class="item">
                     <img src="https://www.ikea.com/images/58/f9/58f9dba846ffe2072a9040c34638cec3.jpg?f=xxs" alt="">
-                    <a href="#" class="detail">지속가능한 먹거리</a>
+                    <div class="detail"><span>지속가능한 먹거리</span></div>
                 </li>
                 <li class="item">
                     <img src="https://www.ikea.com/images/ad/0b/ad0bee4f07299cee59624d3bd853da51.jpg?f=xxs" alt="">
-                    <a href="#" class="detail">지속가능한 가구</a>
+                    <div class="detail"><span>지속가능한 가구</span></div>
                 </li>
             </ul>
-            <input type="range" class="slider">
         </section>
 
         <!-- menu-additional -->
         <ul class="additional-menu">
             <li class="item">
                 <img src="https://www.ikea.com/images/10/f8/10f865a8dc41e5d0a6945581cd838848.jpg?f=m" alt="">
-                <a href="#" class="detail">2021 카탈로그</a>
-            </li>
+                <div class="detail"><span>2021 카탈로그</span></div>
             <li class="item">
                 <img src="https://www.ikea.com/images/ee/8d/ee8d08c5b72db802865f4f366ec2cf0f.jpg?f=m" alt="">
-                <a href="#" class="detail">IKEA 푸드</a>
+                <div class="detail"><span>IKEA 푸드</span></div>
             </li>
         </ul>
 
@@ -251,8 +255,7 @@
                 <li class="moreBtn">침실</li>
                 <li class="moreBtn">거실</li>
                 <li class="moreBtn">주방</li>
-                <li class="moreBtn">홈오피스</li>
-                <li class="moreBtn">아웃도어</li>
+                <li class="moreBtn">+7 더 보기</li>
             </ul>
             <ul class="content">
                 <li class="item"><img src="https://www.ikea.com/ext/ingkadam/m/6e0bc7eeaa1c8288/original/PH164378-crop002.jpg?f=xxs" alt=""></li>
@@ -268,39 +271,51 @@
                 <li class="item"><img src="https://www.ikea.com/ext/ingkadam/m/66233fac36591a37/original/PH159924-crop001.jpg?f=xxs" alt=""></li>
                 <li class="item"><img src="https://www.ikea.com/ext/ingkadam/m/19f5ecee739336e8/original/PH165587-crop001.jpg?f=xxs" alt=""></li>
             </ul>
-            <button class="moreBt">12개 더 보기</button>
+            <button class="moreBtn"><span>12개 더 보기</span></button>
         </section>
 
         <!-- service-sub -->
         <ul class="service-sub">
             <li class="item">
                 <img src="https://www.ikea.com/images/19/fa/19fa59a25c68191571feac7e249a7110.jpg?f=l" alt="">
-                <a href="#" class="detail">제품리콜</a>
+                <button class="moreBtn"><span>제품리콜</span></button>
             </li>
             <li class="item">
                 <img src="https://www.ikea.com/images/15/06/15067ecbac52a280cfc31e2d2c3a25af.jpg?f=l" alt="">
-                <a href="#" class="detail">안전사고 예방 방법</a>
+                <button class="moreBtn"><span>안전사고 예방 방법</span></button>
             </li>
         </ul>
 
         <!-- top-button -->
-        <button class="top">맨 위로 이동</button>
+        <button class="top"><span>맨 위로 이동</span></button>
 
         <!-- footer -->
         <footer>
             <div class="membership">
                 <span class="title">IKEA Family</span>
                 <div class="content">
-                    <span class="info">지금 IKEA Family에 무료로 가입하고 다양한 멤버 전용 혜택을 누리세요.</span>
+                    <p class="info">지금 IKEA Family에 무료로 가입하고 다양한 멤버 전용 혜택을 누리세요.</p>
                     <a href="#" class="detail">자세히 보기</a>
                 </div>
-                <a href="#" class="detail">IKEA Family 가입하기</a>
+                <button class="moreBtn"><span>IKEA Family 가입하기</span></button>
             </div>
             <ul class="menu">
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
+                <li class="item">
+                    <span class="title">고객문의</span>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="item">
+                    <span class="title">쇼핑하기</span>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="item">
+                    <span class="title">서비스</span>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="item">
+                    <span class="title">IKEA 이야기</span>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
             </ul>
             <div class="info">
                 <ul class="icons">
@@ -309,16 +324,29 @@
                     <li class="items"><i class="fab fa-youtube"></i></li>
                 </ul>
                 <ul class="lang">
-                    <li class="item">국가변경</li>
-                    <li class="item">한국어</li>
+                    <li class="item">
+                        <i class="fas fa-globe"></i>
+                        <span>국가변경</span>
+                    </li>
+                    <li class="item">
+                        <span>한국어</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </li>
                 </ul>
                 <span class="copyright">© Inter IKEA Systems B.V 1999-2021</span>
                 <ul class="web">
-                    <li class="item"><a href="#">개인정보처리방침</a></li>
-                    <li class="item"><a href="#">웹사이트 이용약관</a></li>
-                    <li class="item"><a href="#">Responsible disclosure</a></li>
+                    <li class="item"><span>개인정보처리방침</span></li>
+                    <li class="item"><span>웹사이트 이용약관</span></li>
+                    <li class="item"><span>Responsible disclosure</span></li>
                 </ul>
-                <span class="detail">IKEA 코리아 주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점 사업자 등록번호 : 106-86-82871 대표자 : 프레드릭 요한손 통신판매업 신고 : 2018-경기광명-0209 TEL : 1670-4532</span>
+                <div class="detail">
+                    <span>IKEA 코리아</span>
+                    <span>주소 : (우) 14352 경기도 광명시 일직로 7 IKEA광명점</span>
+                    <span>사업자 등록번호 : 106-86-82871</span>
+                    <span>대표자 : 프레드릭 요한손</span>
+                    <span>통신판매업 신고 : 2018-경기광명-0209</span>
+                    <span>TEL : 1670-4532</span>
+                </div>
             </div>
         </footer>
     </body>
